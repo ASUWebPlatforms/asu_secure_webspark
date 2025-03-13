@@ -1,0 +1,19 @@
+name: 'ASU Secure Webspark'
+description: 'Secures a Webspark site for ASU'
+type: Site
+recipes:
+  - webspark_site_builder_role
+install:
+  - asu_secure_superadmin
+  - asu_governance
+
+config:
+  actions:
+    user.role.site_builder:
+      simpleConfigUpdate:
+        dependencies:
+          module:
+            - asu_governance
+      grantPermissions:
+        - 'administer asu modules'
+        - 'administer asu themes'
