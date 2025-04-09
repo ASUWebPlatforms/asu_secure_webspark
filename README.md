@@ -1,5 +1,8 @@
 # ASU Secure Webspark Recipe
 
+## DEPRECATED
+Note: A change to how the modules are coded has made this recipe obsolete.
+
 ## Introduction
 This recipe is intended to lock down ASU Webspark site on the Acquia platform.
 ## Requirements
